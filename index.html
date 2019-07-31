@@ -6,103 +6,136 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+
+  <body
+    data-spy="scroll"
+    data-offset="40"
+    data-target=".nav"
+    style="display: flex;"
+  >
     <div id="container">
       <div id="leftpane">
         <div id="name"><span>Ruturaj Sawant</span></div>
 
-        <a href="#skills" >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M4.104 0l-4.104 4.152 18.888 18.799 5.112 1.049-.961-5.203-18.935-18.797zm15.946 21.502c-.167.166-.436.166-.602 0l-17.262-17.124c-.167-.167-.167-.435-.001-.603.166-.166.437-.166.603 0l17.262 17.126c.167.165.166.435 0 .601zm1.544-2.132c.166.166.166.437 0 .603-.166.165-.436.166-.602 0l-17.263-17.126c-.165-.165-.165-.435 0-.601.167-.166.436-.166.601-.001l17.264 17.125zm-2.855-14.067c-.195-.195-.195-.512 0-.707s.512-.195.707 0 .195.512 0 .707-.511.196-.707 0zm-7.734 12.641l-6.055 6.056-4.95-4.908 6.059-6.059 1.419 1.41-.407.407.707.707-.707.707-.707-.707-.707.707.707.707-.707.707-.707-.707-.707.707.707.707-.707.707-.707-.707-.707.708 2.121 2.121 4.657-4.657 1.398 1.387zm2.035-11.892l6.052-6.052 4.908 4.95-6.013 6.014-1.398-1.388 4.625-4.625-2.121-2.121-2.121 2.12.707.707-.708.708-.707-.707-.707.707.707.707-.707.707-.707-.708-.39.39-1.42-1.409z"
-            />
-          </svg>
-          Skills</a
-        >
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" id="skillstab">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.104 0l-4.104 4.152 18.888 18.799 5.112 1.049-.961-5.203-18.935-18.797zm15.946 21.502c-.167.166-.436.166-.602 0l-17.262-17.124c-.167-.167-.167-.435-.001-.603.166-.166.437-.166.603 0l17.262 17.126c.167.165.166.435 0 .601zm1.544-2.132c.166.166.166.437 0 .603-.166.165-.436.166-.602 0l-17.263-17.126c-.165-.165-.165-.435 0-.601.167-.166.436-.166.601-.001l17.264 17.125zm-2.855-14.067c-.195-.195-.195-.512 0-.707s.512-.195.707 0 .195.512 0 .707-.511.196-.707 0zm-7.734 12.641l-6.055 6.056-4.95-4.908 6.059-6.059 1.419 1.41-.407.407.707.707-.707.707-.707-.707-.707.707.707.707-.707.707-.707-.707-.707.707.707.707-.707.707-.707-.707-.707.708 2.121 2.121 4.657-4.657 1.398 1.387zm2.035-11.892l6.052-6.052 4.908 4.95-6.013 6.014-1.398-1.388 4.625-4.625-2.121-2.121-2.121 2.12.707.707-.708.708-.707-.707-.707.707.707.707-.707.707-.707-.708-.39.39-1.42-1.409z"
+                />
+              </svg>
+              Skills</a
+            >
+          </li>
 
-        <a href="#projects"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="atag"
-          >
-            <path
-              d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z"
-            />
-          </svg>
-          Projects</a
-        >
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="atag"
+              >
+                <path
+                  d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z"
+                />
+              </svg>
+              Projects</a
+            >
+          </li>
 
-        <a href="#education"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M20 12.875v5.068c0 2.754-5.789 4.057-9 4.057-3.052 0-9-1.392-9-4.057v-6.294l9 4.863 9-3.637zm-8.083-10.875l-12.917 5.75 12 6.5 11-4.417v7.167h2v-8.25l-12.083-6.75zm13.083 20h-4c.578-1 1-2.5 1-4h2c0 1.516.391 2.859 1 4z"
-            />
-          </svg>
-          Education</a
-        >
-
-        <a href="#certifications"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M10 8h-5v-1h5v1zm0 1h-5v1h5v-1zm0 2h-5v1h5v-1zm-2 2h-3v1h3v-1zm10.692-3.939c-.628-.436-.544-.327-.782-1.034-.099-.295-.384-.496-.705-.496h-.003c-.773.003-.64.044-1.265-.394-.129-.092-.283-.137-.437-.137s-.308.045-.438.137c-.629.442-.492.397-1.265.394h-.003c-.321 0-.606.201-.705.496-.238.71-.156.6-.781 1.034-.198.137-.308.353-.308.578l.037.222c.242.708.242.572 0 1.278l-.037.222c0 .224.11.441.309.578.625.434.545.325.781 1.033.099.296.384.495.705.495h.003c.773-.003.64-.044 1.265.394.129.093.283.139.437.139s.308-.046.438-.138c.625-.438.49-.397 1.265-.394h.003c.321 0 .606-.199.705-.495.238-.708.154-.599.782-1.033.197-.137.307-.355.307-.579l-.037-.222c-.242-.709-.24-.573 0-1.278l.037-.222c0-.225-.11-.443-.308-.578zm-3.192 3.189c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.751 1.75-1.751s1.75.784 1.75 1.751c0 .966-.783 1.75-1.75 1.75zm1.241 2.758l.021-.008h1.238v7l-2.479-1.499-2.521 1.499v-7h1.231c.415.291.69.5 1.269.5.484 0 .931-.203 1.241-.492zm-16.741-13.008v17h11v-2h-9v-13h20v13h-2v2h4v-17h-24z"
-            />
-          </svg>
-          Certifications</a
-        >
-        <a href="#achievements"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.931 10.245l2.021-2.042-2.778-.403-1.223-2.653-1.222 2.653-2.778.402 2.021 2.042-.492 2.903 2.471-1.391 2.472 1.391-.492-2.902zm-9.481 4.518c-.866-1.382-1.374-3.012-1.374-4.763 0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.792-.53 3.458-1.433 4.861-.607-.31-1.228-.585-1.862-.819.812-1.143 1.295-2.536 1.295-4.042 0-3.86-3.141-7-7-7s-7 3.14-7 7c0 1.476.462 2.844 1.244 3.974-.636.225-1.26.488-1.87.789zm15.307 2.45l-2.334 3.322c-1.603-.924-3.448-1.464-5.423-1.473-1.975.009-3.82.549-5.423 1.473l-2.334-3.322c2.266-1.386 4.912-2.202 7.757-2.211 2.845.009 5.491.825 7.757 2.211zm4.243 2.787h-2.359l-.566 3c-.613-1.012-1.388-1.912-2.277-2.68l2.343-3.335c1.088.879 2.052 1.848 2.859 3.015zm-21.14-3.015l2.343 3.335c-.89.769-1.664 1.668-2.277 2.68l-.566-3h-2.36c.807-1.167 1.771-2.136 2.86-3.015z"
-            />
-          </svg>
-          Achievements</a
-        >
-
-        <a href="#contact"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
-            />
-          </svg>
-          Contact</a
-        >
-
+          <li class="nav-item">
+            <a class="nav-link" href="#education"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12.875v5.068c0 2.754-5.789 4.057-9 4.057-3.052 0-9-1.392-9-4.057v-6.294l9 4.863 9-3.637zm-8.083-10.875l-12.917 5.75 12 6.5 11-4.417v7.167h2v-8.25l-12.083-6.75zm13.083 20h-4c.578-1 1-2.5 1-4h2c0 1.516.391 2.859 1 4z"
+                />
+              </svg>
+              Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certifications"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 8h-5v-1h5v1zm0 1h-5v1h5v-1zm0 2h-5v1h5v-1zm-2 2h-3v1h3v-1zm10.692-3.939c-.628-.436-.544-.327-.782-1.034-.099-.295-.384-.496-.705-.496h-.003c-.773.003-.64.044-1.265-.394-.129-.092-.283-.137-.437-.137s-.308.045-.438.137c-.629.442-.492.397-1.265.394h-.003c-.321 0-.606.201-.705.496-.238.71-.156.6-.781 1.034-.198.137-.308.353-.308.578l.037.222c.242.708.242.572 0 1.278l-.037.222c0 .224.11.441.309.578.625.434.545.325.781 1.033.099.296.384.495.705.495h.003c.773-.003.64-.044 1.265.394.129.093.283.139.437.139s.308-.046.438-.138c.625-.438.49-.397 1.265-.394h.003c.321 0 .606-.199.705-.495.238-.708.154-.599.782-1.033.197-.137.307-.355.307-.579l-.037-.222c-.242-.709-.24-.573 0-1.278l.037-.222c0-.225-.11-.443-.308-.578zm-3.192 3.189c-.967 0-1.75-.784-1.75-1.75 0-.967.783-1.751 1.75-1.751s1.75.784 1.75 1.751c0 .966-.783 1.75-1.75 1.75zm1.241 2.758l.021-.008h1.238v7l-2.479-1.499-2.521 1.499v-7h1.231c.415.291.69.5 1.269.5.484 0 .931-.203 1.241-.492zm-16.741-13.008v17h11v-2h-9v-13h20v13h-2v2h4v-17h-24z"
+                />
+              </svg>
+              Certifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achievements"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.931 10.245l2.021-2.042-2.778-.403-1.223-2.653-1.222 2.653-2.778.402 2.021 2.042-.492 2.903 2.471-1.391 2.472 1.391-.492-2.902zm-9.481 4.518c-.866-1.382-1.374-3.012-1.374-4.763 0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.792-.53 3.458-1.433 4.861-.607-.31-1.228-.585-1.862-.819.812-1.143 1.295-2.536 1.295-4.042 0-3.86-3.141-7-7-7s-7 3.14-7 7c0 1.476.462 2.844 1.244 3.974-.636.225-1.26.488-1.87.789zm15.307 2.45l-2.334 3.322c-1.603-.924-3.448-1.464-5.423-1.473-1.975.009-3.82.549-5.423 1.473l-2.334-3.322c2.266-1.386 4.912-2.202 7.757-2.211 2.845.009 5.491.825 7.757 2.211zm4.243 2.787h-2.359l-.566 3c-.613-1.012-1.388-1.912-2.277-2.68l2.343-3.335c1.088.879 2.052 1.848 2.859 3.015zm-21.14-3.015l2.343 3.335c-.89.769-1.664 1.668-2.277 2.68l-.566-3h-2.36c.807-1.167 1.771-2.136 2.86-3.015z"
+                />
+              </svg>
+              Achievements</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                />
+              </svg>
+              Contact</a
+            >
+          </li>
+        </ul>
         <a href="./ruturajfinal.pdf" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -118,6 +151,7 @@
         >
       </div>
 
+      <!--  -->
       <div id="rightpane">
         <div id="skills">
           <div class="rightpanedivname">Skills</div>
@@ -623,15 +657,15 @@
                   also provided statistical report of garbage bins with the help
                   of web user interface,
                   <!-- In this project we will be using ultrasonic sensors for
-                  measuring the waste deposited in respective garbage bin, thus
-                  analysing and reporting the bin divers for collection of the
-                  waste. In this project, we are providing statistical report of
-                  garbage bins with the help of web user interface, notify the
-                  bin divers via SMS. We are also keeping a database in which we
-                  will store analysed data sensed through ultrasonic sensors
-                  installed in respective bins. Our aim is to provide optimized
-                  path for bin divers (Garbage Collectors), thus providing
-                  efficient diving time. -->
+                    measuring the waste deposited in respective garbage bin, thus
+                    analysing and reporting the bin divers for collection of the
+                    waste. In this project, we are providing statistical report of
+                    garbage bins with the help of web user interface, notify the
+                    bin divers via SMS. We are also keeping a database in which we
+                    will store analysed data sensed through ultrasonic sensors
+                    installed in respective bins. Our aim is to provide optimized
+                    path for bin divers (Garbage Collectors), thus providing
+                    efficient diving time. -->
                 </p>
                 <a href="#" class="card-link">gitcode</a>
                 <a
@@ -873,25 +907,10 @@
           </div>
         </div>
         <!-- <div id="resume">
-          <div class="rightpanedivname">Resume</div>
-        </div> -->
+            <div class="rightpanedivname">Resume</div>
+          </div> -->
       </div>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
